@@ -1,0 +1,32 @@
+<div class="container py-5">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-6">
+      <h3>Sign up</h3>
+      <form (ngSubmit)="registerUser()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            [(ngModel)]="user.email"
+            autocomplete="off"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="user.password"
+            autocomplete="off"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
